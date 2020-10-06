@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DescorjedAPI", "DescorjedAPI\DescorjedAPI.csproj", "{796A7959-6EF8-4DA4-B368-A3F4A5FBBD92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DescorjedAPI", "DescorjedAPI\DescorjedAPI.csproj", "{796A7959-6EF8-4DA4-B368-A3F4A5FBBD92}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DescorjedCore", "DescorjedCore", "{EE4B5DA0-E385-4780-AD33-DA46549A079A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Descorjed.DAL", "Descorjed.DAL", "{7CE7CDD3-73E7-497D-9E3C-8DA3B10A7468}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DescorjedAPI.DAL", "DescorjedAPI.DAL\DescorjedAPI.DAL.csproj", "{0825F5E5-55DB-4FB9-B560-117517083FB9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +21,17 @@ Global
 		{796A7959-6EF8-4DA4-B368-A3F4A5FBBD92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{796A7959-6EF8-4DA4-B368-A3F4A5FBBD92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{796A7959-6EF8-4DA4-B368-A3F4A5FBBD92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0825F5E5-55DB-4FB9-B560-117517083FB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0825F5E5-55DB-4FB9-B560-117517083FB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0825F5E5-55DB-4FB9-B560-117517083FB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0825F5E5-55DB-4FB9-B560-117517083FB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{796A7959-6EF8-4DA4-B368-A3F4A5FBBD92} = {EE4B5DA0-E385-4780-AD33-DA46549A079A}
+		{0825F5E5-55DB-4FB9-B560-117517083FB9} = {7CE7CDD3-73E7-497D-9E3C-8DA3B10A7468}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ED0B7E99-5CCD-4019-9D13-DC586F7A53E5}
