@@ -1,12 +1,10 @@
-﻿using System;
+﻿using DescorjedAPI.DAL;
+using DescorjedAPI.DAL.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using DescorjedAPI.DAL;
-using DescorjedAPI.DAL.Models;
 
 namespace DescorjedAPI.Controllers
 {
