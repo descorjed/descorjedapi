@@ -24,8 +24,8 @@ namespace DescorjedAPI.Controllers
         {
             _context = context;
 
-            //_context.Users.Add(new DAL.Models.User { Login = "Roxxel", Password = "123123", Role = "Admin" });
-            //_context.SaveChanges();
+            _context.Users.Add(new DAL.Models.User { Login = "Roxxel", Password = "123123", Role = "Admin" });
+            _context.SaveChanges();
         }
         [HttpPost("token")]
         public async Task<ActionResult<string>> Token(User user)
@@ -35,7 +35,7 @@ namespace DescorjedAPI.Controllers
             {
                 return BadRequest("Invalid credentials");
             }
-            var timeNow = DateTime.UtcNow;
+            var timeNow = DateTime.Now;
             var jwt = new JwtSecurityToken(
                 issuer: AuthOptions.ISSUER,
                 audience: AuthOptions.AUDIENCE,
