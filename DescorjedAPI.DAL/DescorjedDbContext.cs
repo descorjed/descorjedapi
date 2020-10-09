@@ -12,6 +12,7 @@ namespace DescorjedAPI.DAL
         }
 
         public DbSet<Server> Servers { get; set; }
+        public DbSet<User> Users { get; set; }
 
 
 
