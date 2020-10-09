@@ -24,8 +24,7 @@ namespace DescorjedAPI.Controllers
         {
             _context = context;
 
-            _context.Users.Add(new DAL.Models.User { Login = "Roxxel", Password = "123123", Role = "Admin" });
-            _context.SaveChanges();
+            
         }
         [HttpPost("token")]
         public async Task<ActionResult<string>> Token(User user)

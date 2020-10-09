@@ -72,8 +72,11 @@ namespace DescorjedAPI
             {
                 endpoints.MapControllers();
             });
-
-            serviceProvider.GetService<DescorjedDbContext>().Database.EnsureCreated(); //Проверяем что база данных создана
+            var db = serviceProvider.GetService<DescorjedDbContext>();
+            db.Database.EnsureCreated(); //Проверяем что база данных создана
+            db.Users.Add(new DAL.Models.User { Login = "Roxxel", Password = "123123", Role = "Admin" });
+            db.SaveChanges();
+            
         }
     }
 }
